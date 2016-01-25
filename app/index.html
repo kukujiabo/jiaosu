@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/web.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="frontApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header" ng-controller="HeadNavCtrl">
+      <div class="navbar" role="navigation">
+        <div class="head-nav">
+          <img src="/images/logo1.png" style="width:80px;">
+          <img src="/images/logo2.png" style="width:200px;margin:0 30px">
+          <a style="top:30px;position:relative;left:40px;" href="/#/">
+            <img class="nav-itm" src="/images/shouye.png" width=50px>
+          </a>
+          <a style="top:30px;position:relative;left:90px;" href="/#/description">
+            <img class="nav-itm" src="/images/huijijiaosu.png" width=60px>
+          </a>
+          <a style="top:30px;position:relative;left:120px;" href="/#/articles">
+            <img class="nav-itm" src="/images/jiaosuketang.png" width=80px>
+          </a>
+          <a style="top:30px;position:relative;left:160px;" href="/#/agent">
+            <img class="nav-itm" src="/images/pinpaidaili.png" width=60px>
+          </a>
+          <a style="top:30px;position:relative;left:200px;" href="/#/login">
+            <img class="nav-itm" src="/images/dailishangrukou.png" width=70px>
+          </a>
+          <div class="abs js-nav js-nav-5"></div>
+          <div class="abs js-nav js-nav-4"></div>
+          <div class="abs js-nav js-nav-3"></div>
+          <div class="abs js-nav js-nav-2"></div>
+          <div class="abs js-nav js-nav-1 nav-active"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div  ng-view=""></div>
+    </div>
+    <div class="footer">
+      <div class="m-container">
+        <div class="float-left p-t-16">
+          @copyright
+        </div>
+        <ul class="nav navbar-nav navbar-right menu-color nav-footer">
+          <li>
+            <a href="">关于我们</a>
+          </li>
+          <li>
+            <a href="">联系我们</a>
+          </li>
+          <li>
+            <a href="">大客户服务</a>
+          </li>
+        </ul>
+        <div class="float-right footer-phone">
+            <span class="glyphicon glyphicon-phone-alt"></span>
+            400-0527-572
+        </div>
+        <div class="clear-both"></div>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/carousel.js"></script>
+    <script src="scripts/controllers/headnav.js"></script>
+    <script src="scripts/controllers/description.js"></script>
+    <script src="scripts/controllers/articles.js"></script>
+    <script src="scripts/controllers/agent.js"></script>
+    <script src="scripts/controllers/login.js"></script>
+    <script src="scripts/directives/carousel.js"></script>
+    <script src="scripts/directives/slide.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
