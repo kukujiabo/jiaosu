@@ -1,6 +1,6 @@
-
 body {
   background: url('/images/background_1280.jpg') no-repeat;
+  font-family: 'AdobeSongStd-Light';
 }
 @media screen and (min-width: 1336px) {
   body {
@@ -80,6 +80,12 @@ body {
   -webkit-transition: -webkit-transform 1s;
   -o-transition: -o-transform 1s;
   -moz-transition: -moz-transform 1s;
+}
+.no-margin {
+  margin: 0;
+}
+.ft-tiny {
+  font-size: 0.6em;
 }
 .js-nav:hover {
   cursor: pointer;
@@ -195,8 +201,8 @@ body {
   float: left;
 }
 .login-frame {
-  height: 100%;
-  padding: 5%;
+  padding: 3% 5%;
+  margin: 20px 0;
 }
 .float-right {
   display: inline;
@@ -329,7 +335,7 @@ input.login-text {
 input.login-input {
   position:absolute;
   width: 160px;
-  top:4px;
+  top:7px;
   left:120px;
   background: none;
   border: 0;
@@ -346,7 +352,8 @@ label.js-login-label {
   margin: 0 30px 0 0;
 }
 form#login {
-  padding: 40px 0;
+  padding: 40px 0 0 0;
+  font-family: 'KaiTi';
 }
 div.bottom-line {
   height: 0.5px;
@@ -357,7 +364,7 @@ div.bottom-line {
   margin-bottom: 30px;
 }
 #lg-btn {
-  width: 200px;
+  width: 160px;
 }
 .js-btn {
   cursor: pointer;
@@ -365,6 +372,12 @@ div.bottom-line {
 .login-group {
   margin: 10px 0;
   position: relative;
+}
+.letter-1 {
+  letter-spacing: 1px;
+}
+.letter-2 {
+  letter-spacing: 2px;
 }
 .letter-5 {
   letter-spacing: 5px;
